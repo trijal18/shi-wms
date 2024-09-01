@@ -1,9 +1,9 @@
 import cv2
 import os
 
-def create_video(image_folder, output_video,duration, fps=1):
-    number_of_frames=len(image_folder)
-    fps=number_of_frames//duration
+def create_video(image_folder, output_video,fps=1):
+    # number_of_frames=len(image_folder)
+    # fps=number_of_frames//duration
     # Get a list of images in the directory
     images = [img for img in os.listdir(image_folder) if img.endswith(".jpg")]
     images.sort()  # Ensure images are sorted in the correct order
