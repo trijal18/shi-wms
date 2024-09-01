@@ -34,6 +34,7 @@ def create_video(image_folder, output_video,duration, fps=1):
     # Release the video writer object
     video.release()
     print(f"Video saved as {output_video}")
+    return output_video
 
 if __name__== "__main__":
     # Example usage:
